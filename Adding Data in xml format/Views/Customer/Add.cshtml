@@ -1,0 +1,221 @@
+﻿@model Adding_Data_in_xml_format.Models.Customer
+
+@{
+    ViewBag.Title = "Add";
+}
+<html>
+<head>
+    <title></title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <style>
+    tr,td {
+  
+        width: 150px;
+        text-align: center;
+        border: 1px solid black;
+        padding: 10px;
+    
+}
+    </style>
+</head>
+<body>
+    <h2>Add Customer</h2>
+    <hr />
+    <table style="width:500px" align="center">
+        <tr>
+            <td>
+                <div class="form-group">
+                    <lable>ID:</lable>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input class="form-control" placeholder="ID" type="number" id="InputID" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <lable>UCCNo:</lable>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input class="form-control" placeholder="UCCNo" type="text" id="InputUCCNo" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <lable>Name:</lable>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input class="form-control" placeholder="Name" type="text" id="Inputname" />
+                </div>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <lable>Gender:</lable>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <select id="cboGender" class="form-control" name="cboGender">
+                        <option id="M">M</option>
+                        <option id="F">F</option>
+                        <option id="Unspecified">Unspecified</option>
+                    </select>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <lable>Date Of Birth:</lable>
+                 </div>
+            </td>
+            <td>
+                <div>
+                <input class="form-control" placeholder="Date of Birth" type="date" id="InputDOB" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <lable>EmailId:</lable>
+                 </div>
+            </td>
+            <td>
+                <div>
+                    <input class="form-control " placeholder="EmailId" type="email" id="InputEmailId" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <lable>MobileNo:</lable>
+                 </div>
+            </td>
+            <td>
+                <div>
+                    <input class="form-control " placeholder="MobileNo" type="text" id="InputMobile" />
+                </div>
+            </td>
+            
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <lable>LandLine:</lable>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input class="form-control" placeholder="LandLine" type="text" id="InputLandLine" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <lable>Address:</lable>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <textarea class="form-control" placeholder="address" id="InputAddress"></textarea>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                        <lable>Pincode:</lable>
+                  </div>
+            </td>
+            <td>
+                <div>
+                    <input class="form-control" placeholder="Pincode" type="tel" id="InputPincode" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <lable>DepositoryType:</lable>
+                 </div>
+            </td>
+            <td>
+                <div>
+                    <input class="form-control" placeholder="DepositoryType" type="text" id="InputDepositoryType" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <lable>PanCardNo:</lable>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input class="form-control" placeholder="PanCardNo" type="text" id="InputPanCardNo" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <div class="form-group">
+                    <input id="btnSave" style="margin:5px;" class="btn btn-success" type="button" value="Save" />
+                    <input id="btnCancel" style="margin:5px;" class="btn btn-danger" type="button" value="Cancel" />
+                </div>
+            </td>
+        </tr>
+    </table>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#btnSave').click(function () {
+                    $.ajax(
+                        {
+                            type: 'POST',
+                            url: '/Customer/Add',
+                            data: {
+                                Id: $('#InputID').val(),
+                                UCCNo: $('#InputUCCNo').val(),
+                                Name: $('#Inputname').val(),
+                                Gender: $('#cboGender').val(),
+                                DOB: $('#InputDOB').val(),
+                                EmailID: $('#InputEmailId').val(),
+                                Mobile: $('#InputMobile').val(),
+                                Landline: $('#InputLandLine').val(),
+                                Address: $('#InputAddress').val(),
+                                PinCode: $('#InputPincode').val(),
+                                DepositoryType: $('#InputDepositoryType').val(),
+                                PanCardNo: $('#InputPanCardNo').val()
+                            },
+                            success: function (result) {
+                                alert("Customer Added Succefully");
+                            },
+                            error: function (errormessage) {
+                                alert(errormessage.responseText);
+                            }
+
+                        });
+
+                });
+            });
+        </script>
+</body>
+</html>

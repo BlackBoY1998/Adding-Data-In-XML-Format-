@@ -1,0 +1,21 @@
+D:\akash\study\Adding Data in xml format\Adding Data in xml format\bin\Adding Data in xml format.dll.config
+D:\akash\study\Adding Data in xml format\Adding Data in xml format\bin\Adding Data in xml format.dll
+D:\akash\study\Adding Data in xml format\Adding Data in xml format\bin\Adding Data in xml format.pdb
+D:\akash\study\Adding Data in xml format\Adding Data in xml format\bin\Dapper.dll
+D:\akash\study\Adding Data in xml format\Adding Data in xml format\bin\System.Web.Helpers.dll
+D:\akash\study\Adding Data in xml format\Adding Data in xml format\bin\System.Web.Mvc.dll
+D:\akash\study\Adding Data in xml format\Adding Data in xml format\bin\System.Web.Razor.dll
+D:\akash\study\Adding Data in xml format\Adding Data in xml format\bin\System.Web.Webpages.Deployment.dll
+D:\akash\study\Adding Data in xml format\Adding Data in xml format\bin\System.Web.Webpages.dll
+D:\akash\study\Adding Data in xml format\Adding Data in xml format\bin\System.Web.Webpages.Razor.dll
+D:\akash\study\Adding Data in xml format\Adding Data in xml format\bin\Dapper.pdb
+D:\akash\study\Adding Data in xml format\Adding Data in xml format\bin\Dapper.xml
+D:\akash\study\Adding Data in xml format\Adding Data in xml format\bin\System.Web.Razor.xml
+D:\akash\study\Adding Data in xml format\Adding Data in xml format\bin\System.Web.Webpages.xml
+D:\akash\study\Adding Data in xml format\Adding Data in xml format\bin\System.Web.Webpages.Deployment.xml
+D:\akash\study\Adding Data in xml format\Adding Data in xml format\bin\System.Web.Webpages.Razor.xml
+D:\akash\study\Adding Data in xml format\Adding Data in xml format\bin\System.Web.Helpers.xml
+D:\akash\study\Adding Data in xml format\Adding Data in xml format\bin\System.Web.Mvc.xml
+D:\akash\study\Adding Data in xml format\Adding Data in xml format\obj\Debug\Adding Data in xml format.csprojResolveAssemblyReference.cache
+D:\akash\study\Adding Data in xml format\Adding Data in xml format\obj\Debug\Adding Data in xml format.dll
+D:\akash\study\Adding Data in xml format\Adding Data in xml format\obj\Debug\Adding Data in xml format.pdb
